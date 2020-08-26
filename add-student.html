@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insert Student Data</h1>
+        <form action="/add-student" method="POST">
+            <label for="id">Student ID</label>
+            <input type="number" name="id">
+            <label for="name">Student Name</label>
+            <input type="text" name="name" id="name">
+            <label for="gender">Gender</label>
+            <label for="gender" id="checkbox-item">
+                <input type="checkbox" name="gender" value="Male">
+                Male
+            </label>
+            <label for="gender" id="checkbox-item">
+                <input type="checkbox" name="gender" value="Female">
+                Female
+            </label>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob">
+            <label for="city">City</label>
+            <input type="text" name="city">
+            <label for="state">State</label>
+            <input type="text" name="state">
+            <label for="email">Email Id</label>
+            <input type="email" name="email">
+            <label for="qualification">Qualification</label>
+            <input type="text" name="qualification">
+            <label for="stream">Stream</label>
+            <input type="text" name="stream">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Records</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+              <th>Student Id</th>
+              <th>Name</th> 
+              <th>Gender</th>
+              <th>DateOfBirth</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Email ID</th>
+              <th>Qualification</th>
+              <th>Stream</th>
+            </tr>
+        <%records.forEach((result)=>{%>
+            <tr>
+                <td><%=result.Student_Id%></td>
+                <td><%=result.Name%></td>
+                <td><%=result.Gender%></td>
+                <td><%=result.DateOfBirth%></td>
+                <td><%=result.City%></td>
+                <td><%=result.State%></td>
+                <td><%=result.EmailId%></td>
+                <td><%=result.Qualification%></td>
+                <td><%=result.Stream%></td>
+            </tr>
+        <%})%>
+        </table>
+    </div>
+</body>
+</html>
